@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Registration. Please fill in the form below.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+      body,td { font-family:Lato, Lato, sans-serif; color: #FFFFFF; font-size: 1.50em; font-weight: normal; font-style: italic; }
+      body { text-align:center; background-color: #ccf2ff;  }
+    </style>
+    </head>
+    <body>
+<!-- 58 -->
+
+	<div style="text-align: center;">
+	<div style="box-sizing: border-box; display: inline-block; width: 600px; height: 300px; background-color: #ccf2ff; border: 6px solid #FFFFFF; border-radius: 5px; margin: 80px auto auto;">
+	<div style="background: #ccf2ff; border-radius: 5px 5px 0px 0px; padding: 15px;"><span style="font-family: Lato, Lato, sans-serif; color: #FFFFFF; font-size: 1.50em; font-style:italic; font-weight:bold;">Please fill in the form below.</span></div>
+	<div style="background: ; padding: 15px" id="ap_style">
+	<style type="text/css" scoped>
+	#ap_style td { text-align:left; font-family:Lato, Lato, sans-serif; color: #FFFFFF; font-size: 1.00em; }
+	#ap_style input,select { border: 0.5px solid #FFFFFF; margin: 3px; border-radius: 2px; color: #004aa8;box-shadow: 1px 1px 1px #004aa8; height:20px; border-radius: 3px 3px 3px 3px;display: inline-block; font-size: 0.50em;  padding: 2px; }
+	#ap_style input[type="text"], input[type="password"], select { width: 100%; }
+	#ap_style input[type="button"], #ap_style input[type="reset"], #ap_style input[type="submit"] { height: auto; width: auto; cursor: pointer; font-size: 0.6em; box-shadow: 1px 1px 1px #004aa8; float: right; text-align:right; margin-top: 10px; margin-right: -5px;}
+	#ap_style table.center { margin-left:auto; margin-right:auto; }
+	#ap_style .error { font-family: Lato, Lato, sans-serif; color:#FFFFFF; font-size: 1.50em; }
+	</style>
+<script type="text/javascript" src="https://www.authpro.com/regformcheck.js"></script>
+<form method="post" action="http://localhost:3000/login" onSubmit="return verifyform(this);">
+<input type="hidden" name="action" value="reg2">
+<input type="hidden" name="user" value="deluxe">
+<center><table>
+<tr><td>columbia email:</td>
+  <td><input type="text" name="_email"></td></tr>
+<tr><td>name:</td>
+  <td><input type="text" name="_login"></td></tr>
+<tr><td>choose password:</td>
+  <td><input type="password" name="_password"></td></tr>
+<tr><td>verify password:</td>
+  <td><input type="password" name="_password2"></td></tr>
+<tr><td></td>
+  <td><input type="submit" value="SUBMIT"></td></tr>
+</table></center>
+</form>
+</html>

@@ -1,0 +1,62 @@
+body{
+	background-color: #ffffff;
+}
+
+body .header{
+  max-height: 300px;
+}
+
+body .header > img {
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}
+
+.main > .buttons{
+	display: flex;
+}
+
+body > .main > .buttons > .ask{
+  	font-family: 'Lato', sans-serif;
+  	font-weight: bold;
+  	width: 700px;
+  	height: 400px;
+	display:inline-block;
+	font-size:60px;
+	margin-right:30px;
+	opacity: .8;
+	box-sizing: border-box;
+	color: #c5ddfc;
+	padding-top:20px;
+	margin-left: auto;
+	text-align: center;
+  	line-height: 6;
+}
+
+body > .main > .buttons > .do{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	width: 700px;
+	height: 400px;
+	display:inline-block;
+	font-size:60px;
+	opacity:.8;
+	box-sizing: border-box;
+	color:#c5ddfc;
+	padding-top:20px;
+	margin-right: auto;
+	text-align: center;
+  	line-height: 6;
+}
+
+body > .main > .buttons > .ask:hover{
+  cursor: pointer;
+  background-color: #FFFAFA;
+  opacity: 0.1;
+}
+
+body > .main > .buttons > .do:hover{
+  cursor: pointer;
+  background-color: #FFFAFA;
+  opacity: 0.1;
+}

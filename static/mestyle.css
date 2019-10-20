@@ -1,0 +1,71 @@
+.header{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.header > img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+body{
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #c5ddfc;
+    background-color: #c5ddfc;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 30px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #cccccc;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #cccccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid color:white;
+    border-top: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

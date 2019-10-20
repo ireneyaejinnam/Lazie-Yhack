@@ -1,0 +1,92 @@
+<!--
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+      body,td { font-family:Lato, Lato, sans-serif; color: #FFFFFF; font-size: 1.00em; font-weight: normal; font-style: italic; }
+      body { text-align:center; background-color: #ccf2ff;  }
+    </style>
+    </head>
+    <body>
+
+<div style="text-align: center;">
+	<div style="box-sizing: border-box; display:inline block; width: 500px; height: 350px; background-color: #ccf2ff; border: 6px solid #FFFFFF; border-radius: 5px; margin: 80px auto auto">
+	<div style="background-color: #ccf2ff; border-radius: 5px 5px 5px 5px;padding: 15px;"><span style="font-family:Lato, Lato, sans-serif; font-style: italic; font-weight:bold; color: #FFFFFF; font-size: 2.50em; ">Sign in.</span></div>
+	<div style="background-color: #ccf2ff; padding: 15px" id="ap_style">
+	<style type="text/css" scoped>
+	#ap_style td { text-align:right; font-family: Lato, Lato, sans-serif;font-style: italic; color: #FFFFFF; font-size: 1.50em; }
+	#ap_style input,select { border: 2px; box-shadow: 1px 1px 1px; border-radius: 3px 3px 3px 3px; color: #004aa8; display: inline-block; font-size: 0.50em;  padding: 5px; }
+	#ap_style input[type="text"], input[type="password"], select { width: 100%; }
+	#ap_style input[type="button"], #ap_style input[type="reset"], #ap_style input[type="submit"] { height: auto; width: auto; cursor: pointer; float: right; text-align:right; margin-top: 10px; margin-left:10px;}
+	#ap_style table.center { margin-left:auto; margin-right:auto; }
+	</style>
+<form method="post" action="https://www.authpro.com/auth/deluxe/" name="aform" target="_top">
+<input type="hidden" name="action" value="login">
+<input type="hidden" name="hide" value="">
+<table class='center'>
+<tr><td>username:</td><td><input type="text" name="login"></td></tr>
+<tr><td>password:</td><td><input type="password" name="password"></td></tr>
+<tr><td>&nbsp;</td><td><input type='checkbox' name='remember' value='1'> remember me</td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="SIGN IN"></td></tr>
+<tr><td colspan=2>&nbsp;</td></tr>
+
+<<<<<<< HEAD
+
+
+<!DOCTYPE html>
+<html>
+--> 
+
+
+{% extends "base.html" %}
+
+<!--
+<style media="screen" type="text/css">
+     h1,body { font-family:Lato, Lato, sans-serif; color: #ccf2ff; text-align:left; }
+     h1 { font-size: 3.00em; font-style:normal; }
+     body { font-size: 2.00em; font-style:normal; text-align:center; background-color: #FFFFFF; }
+</style>
+-->
+
+
+<!--
+<body>
+	<div style="text-align: center">
+		<div style="box-sizing: border-box; display:inline block; width: 500px; height: 350px; background-color: #ccf2ff; border: 6px solid #FFFFFF; border-radius: 5px; margin: 80px auto auto">
+		<div style="background-color: #ccf2ff; border-radius: 5px 5px 5px 5px;padding: 15px;"><span style="font-family:Lato, Lato, sans-serif; font-style: italic; font-weight:bold; color: #FFFFFF; font-size: 2.50em; ">Login</span>
+		<div style="background-color: #ccf2ff; padding: 15px" id="ap_style">
+		<style type="text/css" scoped>
+		#ap_style td { text-align:right; font-family: Lato, Lato, sans-serif;font-style: italic; color: #FFFFFF; font-size: 1.00em; }
+		#ap_style input,select { border: 2px; box-shadow: 1px 1px 1px; border-radius: 3px 3px 3px 3px; color: #004aa8; display: inline-block; font-size: 0.50em;  padding: 5px; }
+		#ap_style input[type="text"], input[type="password"], select { width: 100%; }
+		#ap_style input[type="button"], #ap_style input[type="reset"], #ap_style input[type="submit"] { height: auto; width: auto; cursor: pointer; float: right; text-align:right; margin-top: 10px; margin-left:10px;}
+		#ap_style table.center { margin-left:auto; margin-right:auto; }
+		</style>
+-->
+{% block content %}
+
+<h1>Login</h1>
+
+<!--
+<body>
+	<div class="col-md-4" style="text-align:left"; >
+  		{{ wtf.quick_form(form) }}
+	</div>
+</body>
+-->
+
+<div class="col-md-4" style="text-align:left"; >
+  	{{ wtf.quick_form(form) }}
+</div>
+
+{% endblock %}
+
+<!--
+=======
+<tr><td colspan=2><a href="file:///Users/yunsukim/Desktop/createaccountdemo.html">create account</a></td></tr>
+	<div style = "color: #004aa8">
+</table>
+</form>
+</div></div></div>
+</html>
+>>>>>>> 81158d5fc61c89f38e6315957a77c1d345db4fcc
+-->

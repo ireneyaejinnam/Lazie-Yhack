@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<div class="header">
+      <img src="/static/lazielogo.png">
+    </div>
+</head>
+<body>
+	<script src="/static/me.js"></script>
+	<link href="/static/mestyle.css" type="text/css" rel="stylesheet">
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'London')">My Asks</button>
+	  <button class="tablinks" onclick="openCity(event, 'Paris')">My Do's</button>
+	</div>
+
+	<div id="London" class="tabcontent">
+	  	<h3>My Asks</h3>
+
+	  	{% for ask_doc in all_asks_list %}
+	  	<div class="container"; style="background-color: #ffffff; font-family: 'Lato', sans-serif;">
+   			<div class="panel-group">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                    	<h4 class="panel-title">
+	                        <a style="margin-left: 3px;">{{ ask_doc.task }}</a> 
+	                        <b style="float:right;">{{ ask_doc.reward }}</b>
+                    	</h4>
+	                </div>
+	                <div class="panel-body">{{ ask_doc.descr }}</div>
+            	</div>
+        	</div>
+        </div>
+    	{% endfor %}
+	</div>
+	
+	<div id="Paris" class="tabcontent">
+		<h3>My Do's</h3>
+
+	  	{% for ask_doc in all_dos_list %}
+	  	<div class="container"; style="background-color: #ffffff; font-family: 'Lato', sans-serif;">
+   			<div class="panel-group">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                    	<h4 class="panel-title">
+	                        <a style="margin-left: 3px;">{{ ask_doc.task }}</a> 
+	                        <b style="float:right;">{{ ask_doc.reward }}</b>
+                    	</h4>
+	                </div>
+	                <div class="panel-body">{{ ask_doc.descr }}</div>
+            	</div>
+        	</div>
+        </div>
+    	{% endfor %}
+	</div>
+
+</body>
+
+</html>
+
+{% endblock %}
